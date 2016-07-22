@@ -1,0 +1,6 @@
+framework module JBChartView {
+  umbrella header "JBChartView-umbrella.h"
+
+  export *
+  module * { export * }
+}

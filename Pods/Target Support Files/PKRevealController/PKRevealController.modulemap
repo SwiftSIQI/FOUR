@@ -1,0 +1,6 @@
+framework module PKRevealController {
+  umbrella header "PKRevealController-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,8 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Reveal-iOS-SDK/Reveal-Framework-iOS-1.6.2"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Reveal-iOS-SDK"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/CocoaLumberjack.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/DZNEmptyDataSet.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/IAPHelper.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/JBChartView.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/JazzHands.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Masonry.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/PKRevealController.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Realm.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/STPopup.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/XYPieChart.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/pop.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Reveal-iOS-SDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"z" -framework "CFNetwork" -framework "CocoaLumberjack" -framework "CoreGraphics" -framework "DZNEmptyDataSet" -framework "IAPHelper" -framework "JBChartView" -framework "JazzHands" -framework "Masonry" -framework "PKRevealController" -framework "QuartzCore" -framework "Realm" -framework "Reveal" -framework "STPopup" -framework "XYPieChart" -framework "pop"
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods
+PODS_ROOT = ${SRCROOT}/Pods

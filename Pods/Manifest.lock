@@ -1,0 +1,52 @@
+PODS:
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.3.0):
+    - CocoaLumberjack/Default
+  - DZNEmptyDataSet (1.8.1)
+  - IAPHelper (1.0.8.1)
+  - JazzHands (2.0.8)
+  - JBChartView (3.0.12)
+  - Masonry (1.0.1)
+  - PKRevealController (2.0.6)
+  - pop (1.0.9)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+  - Reveal-iOS-SDK (1.6.2)
+  - STPopup (1.7.0)
+  - XYPieChart (0.2)
+
+DEPENDENCIES:
+  - CocoaLumberjack
+  - DZNEmptyDataSet
+  - IAPHelper
+  - JazzHands
+  - JBChartView
+  - Masonry
+  - PKRevealController
+  - pop
+  - Realm
+  - Reveal-iOS-SDK
+  - STPopup
+  - XYPieChart
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  IAPHelper: fbed593436838c3d40753ded319062b68c00cc38
+  JazzHands: 355dc5c2b6fc38ee460d0ed7836c69539263f477
+  JBChartView: 08877554448ccf99c12625ad0ebce70588ff8318
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  PKRevealController: ffb45a16f5a5032ad90a3d16e5cbb0d8e035bd58
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
+  STPopup: 36b45120f51ab3cdf7a10c1b9032b7fc8eef75ac
+  XYPieChart: 0efd8069d26c25d20ab74c01b5ad455f1fc48153
+
+COCOAPODS: 0.39.0

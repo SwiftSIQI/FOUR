@@ -1,0 +1,252 @@
+//
+//  SQPrefixHeader.pch
+//  Ten-Thousand-Hours
+//
+//  Created by 张思琦 on 16/6/20.
+//  Copyright © 2016年 SQ-Studio. All rights reserved.
+//
+
+#ifndef SQPrefixHeader_pch
+#define SQPrefixHeader_pch
+
+//当文件类型为Object-C时,会启用下面的宏
+#ifdef __OBJC__
+/**
+ *  导入系统框架
+ */
+#import <SafariServices/SFSafariViewController.h>
+#import <QuartzCore/QuartzCore.h>
+#import <MessageUI/MessageUI.h>
+#import <StoreKit/StoreKit.h>
+#include <sys/sysctl.h>
+
+/**
+ *  导入第三方框架
+ */
+
+#import <Masonry/Masonry.h>
+#import <Realm/Realm.h>
+#import <POP/POP.h>
+#import <JazzHands/IFTTTJazzHands.h>
+
+#import <XYPieChart/XYPieChart.h>
+#import <JBChartView/JBChartView.h>
+#import <JBChartView/JBLineChartView.h>
+
+#import <PKRevealController/PKRevealController.h>
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+#import <STPopup/STPopup.h>
+#import <IAPHelper/IAPHelper.h>
+#import <IAPHelper/IAPShare.h>
+
+#define LOG_LEVEL_DEF ddLogLevel
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+//pod 'Masonry'
+//pod 'Realm'
+//pod 'pop'
+//pod 'JazzHands'
+//
+//pod 'XYPieChart'
+//pod 'JBChartView'
+//
+//pod 'PKRevealController'
+//pod 'DZNEmptyDataSet'
+//pod 'STPopup'
+//pod 'IAPHelper'
+//pod 'CocoaLumberjack'
+//pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+
+/**
+ *  导入自定义类
+ */
+#import "SQConst.h"
+#import "SQCustomFormatter.h"
+
+//数据模型相关
+#import "SQTaskRealmModel.h"
+#import "SQTaskDetailsRealmModel.h"
+
+//欢迎界面
+#import "SQWelcomeViewController.h"
+#import "SQCircleView.h"
+
+//主界面相关
+#import "SQNavigationController.h"
+#import "SQHomeViewController.h"
+#import "SQHomeCollectionLayout.h"
+#import "SQHomeCollectionCell.h"
+#import "SQCreatNewTaskViewController.h"
+#import "SQTextField.h"
+#import "SQRecordViewController.h"
+#import "SQAchieveViewController.h"
+#import "SQAlertViewController.h"
+#import "SQDeleteViewController.h"
+
+//左边
+#import "SQLeftMenuViewController.h"
+#import "SQOverviewTableViewController.h"
+#import "SQOverviewTableViewCell.h"
+#import "SQPieChartViewController.h"
+#import "SQHistoryViewController.h"
+#import "SQHistoryTableViewController.h"
+#import "SQHistoryTableViewCell.h"
+#import "SQTitleViewButton.h"
+#import "SQHistoryTableViewHeader.h"
+#import "SQAnalysisCollectionViewController.h"
+#import "SQAnalysisCollectionViewFlowLayout.h"
+#import "SQAnalysisCollectionViewCell.h"
+#import "SQChartHeaderView.h"
+#import "SQChartFooterView.h"
+#import "SQChartInformationView.h"
+#import "SQChartTooltipView.h"
+#import "SQChartTooltipTipView.h"
+
+//右边
+#import "SQRightMenuViewController.h"
+#import "SQAboutUsTableViewController.h"
+#import "SQAboutUsTableViewHeader.h"
+#import "SQPodsTableViewController.h"
+#import "SQDeveloperTableViewController.h"
+#import "SQDeveloperTableViewCell.h"
+#import "SQFeedBackViewController.h"
+#import "SQDonateViewController.h"
+#import "SQDonateButtonView.h"
+
+//Extension
+#import "NSDate+SQNSDateExtension.h"
+#import "NSDateFormatter+SQNSDateFormatterExtension.h"
+#import "NSDateComponents+SQNSDateComponentsExtension.h"
+#import "NSString+SQNSStringExtension.h"
+#import "NSArray+SQNSArrayExtension.h"
+#import "NSNumber+SQNSNumberExtension.h"
+#import "UILabel+SQUILabelExtension.h"
+#import "UIButton+SQUIButtonExtension.h"
+#import "UIColor+SQUIColorExtension.h"
+#import "UIViewController+SQUIViewControllerExtension.h"
+#import "UIImageView+SQUIImageViewExtension.h"
+#import "UIDevice+SQUIDeviceExtension.h"
+#import "STPopupController+SQSTPopupControllerExtension.h"
+
+//转场相关
+#import "SQDismissingAnimator.h"
+#import "SQPresentingAnimator.h"
+
+/**
+ *  颜色相关的宏定义
+ */
+//标准四原色
+//绿色
+#define kSQColorDefaultGreenColor [UIColor colorWithRed:0.204  green:0.659  blue:0.325 alpha:1]
+//红色
+#define kSQColorDefaultRedColor [UIColor colorWithRed:0.918  green:0.263  blue:0.208 alpha:1]
+//蓝色
+#define kSQColorDefaultBlueColor [UIColor colorWithRed:0.259  green:0.522  blue:0.957 alpha:1]
+//黄色
+#define kSQColorDefaultYellowColor [UIColor colorWithRed:0.984  green:0.737  blue:0.020 alpha:1]
+
+//辅助色
+//橙色
+#define kSQColorDefaultOrangeColor [UIColor colorWithRed:1  green:0.341  blue:0.133 alpha:1]
+//柠檬色
+#define kSQColorDefaultLimeColor [UIColor colorWithRed:0.804  green:0.863  blue:0.224 alpha:1]
+//灰色
+#define kSQColorDefaultGreyColor [UIColor colorWithRed:0.620  green:0.620  blue:0.620 alpha:1]
+//黑色
+#define kSQColorDefaultBlackColor [UIColor colorWithRed:0  green:0  blue:0 alpha:1]
+//白色
+#define kSQColorDefaultWhiteColor [UIColor colorWithRed:1  green:1  blue:1 alpha:1]
+//青色
+#define kSQColorDefaultTealColor [UIColor colorWithRed:0  green:0.588  blue:0.533 alpha:1]
+//金色
+#define kSQColorDefaultAmberColor [UIColor colorWithRed:1  green:0.757  blue:0.027 alpha:1]
+
+
+//背景相关
+//黑色系
+//NavigationBar的黑背景色
+#define kSQColorDefaultNaviBarColor [UIColor colorWithRed:0.129  green:0.129  blue:0.129 alpha:1]
+//Background的黑背景色
+#define kSQColorDefaultBackgroundBlackColor [UIColor colorWithRed:0.188  green:0.188  blue:0.188 alpha:1]
+//Popup的黑背景色
+#define kSQColorDefaultPopupBlackColor [UIColor colorWithRed:0.259  green:0.259  blue:0.259 alpha:1]
+//白色系
+//Background的白背景色
+#define kSQColorDefaultBackgroundWhiteColor [UIColor colorWithRed:0.980  green:0.980  blue:0.980 alpha:1]
+//Popup的白背景色
+#define kSQColorDefaultPopupWhiteColor [UIColor colorWithRed:1  green:1  blue:1 alpha:1]
+
+#define kSQColorAchieveViewBackgroundBlueColor [UIColor colorWithRed:0.064  green:0.223  blue:0.406 alpha:1]
+
+//字体颜色相关
+//一级字体黑色
+#define kSQColorDefaultPrimaryTextBlackColor [UIColor colorWithRed:0  green:0  blue:0 alpha:0.87]
+//二级字体黑色
+#define kSQColorDefaultSecondaryTextBlackColor [UIColor colorWithRed:0  green:0  blue:0 alpha:0.54]
+//三级黑色字体
+#define kSQColorDefaultTertiaryTextBlackColor [UIColor colorWithRed:0  green:0  blue:0 alpha:0.38]
+
+//一级字体白色
+#define kSQColorDefaultPrimaryTextWhiteColor [UIColor colorWithRed:1  green:1  blue:1 alpha:1]
+//二级字体白色
+#define kSQColorDefaultSecondaryTextWhiteColor [UIColor colorWithRed:1  green:1  blue:1 alpha:0.7]
+//三级字体白色
+#define kSQColorDefaultTertiaryTextWhiteColor [UIColor colorWithRed:1  green:1  blue:1 alpha:0.5]
+
+
+//字体相关
+//一级加粗字体
+#define kSQDefaultPrimaryFont [UIFont fontWithName:@"Lato-Bold" size:80]
+//二级加粗字体
+#define kSQDefaultSecondaryBoldFont [UIFont fontWithName:@"Lato-Bold" size:28]
+//二级不加粗字体
+#define kSQDefaultSecondaryRegularFont [UIFont fontWithName:@"Lato-Regular" size:28]
+//三级字体不加粗字体
+#define kSQDefaultTertiaryFont [UIFont fontWithName:@"Lato-Regular" size:14]
+
+//自定义大小的默认Bold字体
+#define kSQDefaultFontBoldWith(fontSize) [UIFont fontWithName:@"Lato-Bold" size:fontSize]
+//自定义大小的默认Regular字体
+#define kSQDefaultFontRegularWith(fontSize) [UIFont fontWithName:@"Lato-Regular" size:fontSize]
+
+//常用距离值
+//屏幕的宽高值
+//屏幕宽
+#define kScreenWidht ([UIScreen mainScreen].bounds.size.width)
+//屏幕高
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+
+//Overview界面中PieChart的宽高
+//OverView中PieChart的宽
+#define kSQPieChartViewPieChartWidth (kScreenWidht - 4 * kLargeMargin)
+//OverView中PieChart的高
+#define kSQPieChartViewPieChartHeight  (kScreenWidht - 4 * kLargeMargin)
+
+//History界面中Cell的宽高
+//History界面中Cell的宽
+#define kCollectonCellCustomContentViewWidth (kScreenWidht - 4 * kLargeMargin)
+//History界面中Cell的高
+#define kCollectonCellCustomContentViewHeight (kScreenHeight - 4 * kLargeMargin - kStatusBarHeight - kNavigationBarHeight)
+
+
+//Popup界面中Cell的宽高
+#define kPopupViewWidth kScreenWidht * 0.75
+#define kPopupDefaulViewtHeight 120
+#define kPopupDeleteViewHeight 200
+
+
+#define kScreenRatio ([UIScreen mainScreen].bounds.size.width / 414)
+
+
+
+
+
+
+/**
+ *  log增强
+ */
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+
+#endif
+
+#endif /* SQPrefixHeader_pch */

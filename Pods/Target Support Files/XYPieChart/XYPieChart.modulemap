@@ -1,0 +1,6 @@
+framework module XYPieChart {
+  umbrella header "XYPieChart-umbrella.h"
+
+  export *
+  module * { export * }
+}
