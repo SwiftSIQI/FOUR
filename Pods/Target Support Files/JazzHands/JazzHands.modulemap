@@ -1,6 +1,0 @@
-framework module JazzHands {
-  umbrella header "JazzHands-umbrella.h"
-
-  export *
-  module * { export * }
-}

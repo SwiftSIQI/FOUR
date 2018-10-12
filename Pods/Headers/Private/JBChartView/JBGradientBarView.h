@@ -1,1 +1,0 @@
-../../../JBChartView/Classes/Bar/Views/JBGradientBarView.h
